@@ -1,0 +1,39 @@
+.div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.boton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.nombre {
+    font-size: 30px;
+    color: #4CAF50;
+    text-align: center;
+    margin: 10px;
+}
+
+.info {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin: 10px;
+}
+
+.img {
+    max-width: 50%;
+    height: auto;
+}
