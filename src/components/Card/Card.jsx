@@ -30,12 +30,6 @@ function Card({name, species, gender, image, onClose, id}) {
 
    return (
       <div className={styles.contenedor}>
-         {
-            isFav ? (<button onClick={handleFavorite}>❤️</button>) 
-            : (<button onClick={handleFavorite}>🤍</button>)
-         }
-
-
          <button className={styles.botoncito} onClick={() => onClose()}>X</button>
 
          <Link to={`/detail/${id}`} className={styles.vinculo}>
@@ -45,6 +39,10 @@ function Card({name, species, gender, image, onClose, id}) {
          <h2 >{species}</h2>
          <h2 >{gender}</h2>
          <img className={styles.img} src={image} alt="imagen" /> 
+         {
+            isFav ? (<button onClick={handleFavorite} className={styles.botonFav}>❤️</button>) 
+            : (<button onClick={handleFavorite} className={styles.botonFav}>🤍</button>)
+         }
       </div>
    );
 }

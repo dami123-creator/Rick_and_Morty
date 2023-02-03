@@ -9,8 +9,8 @@ const Favorites = () => {
     <div>
       {myFavorite.map((character) => {
         return (
-          <div key={character.id} className={styles.CardContainer}>
-            <Link to={`/detail/${character.id}`} className={styles.link}>
+          <div key={character.id} className={styles.contenedor}>
+            <Link to={`/detail/${character.id}`} className={styles.vinculo}>
                 <h2 className={styles.title}>{character.name}</h2>
             </Link>
             <h2 className={styles.text}>{character.species}</h2>
