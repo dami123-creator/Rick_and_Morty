@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styles from "./Detail.module.css"
+import {AiFillHome} from 'react-icons/ai'
 
 function Detail(){
     const { detailId } = useParams();  
@@ -26,7 +27,7 @@ function Detail(){
     return(
         <div className={styles.div}>
             <button className={styles.boton}>
-                <Link to='/home' >Home</Link>
+                <Link to='/home' className={styles.links} >Home <AiFillHome/></Link>
             </button>
             <h1 className={styles.nombre}>{character?.name}</h1>
             <p className={styles.info}>{character?.status}</p>

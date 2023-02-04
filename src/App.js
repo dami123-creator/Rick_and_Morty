@@ -45,12 +45,12 @@ function App() {
 
   return (
     <div>
-      {/* {location.pathname === "/" ? (
+      {location.pathname === "/" ? (
         <Form login={login} />
       ) : (
         <Nav onSearch={onSearch} />
-      )} */}
-      <Nav onSearch={onSearch}/>
+      )}
+      {/* <Nav onSearch={onSearch}/> */}
       <Routes>
         <Route
           path="home"

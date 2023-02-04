@@ -1,5 +1,9 @@
 .list{
-    background-color: rgb(7, 51, 13);
+    /* background-color: rgb(7, 51, 13); */
+    background-image: url('../../assets/fondo.jpg');
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.7);
     margin: 0;
 	padding: 0;
 	list-style: none;

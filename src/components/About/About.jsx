@@ -1,16 +1,21 @@
 import React from "react";
+import styles from './About.module.css'
+import image from '../../assets/yo.jpg'
+import linked from '../../assets/logoo.png'
 
 function About() {
     return(
-        <div>
-            <h1>Bienvenido a mi App</h1>
-            <h2>Mi nombre es Damian Figueroa</h2>
-            <p>Soy estudiante de soyHenry! actualmente cursando
-            el M2, con muchas ganas de seguir aprendiendo y creando 
-            mas proyectos</p>
-            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQHyFA8WwJhMaw/profile-displayphoto-shrink_200_200/0/1658452158177?e=1674086400&v=beta&t=Kn-EHAvdlOoaBywNxe5f-Y_iPb7_NH0NuRVnY_c4mGA"
-                alt="Damian Figueroa" width="300px"
+        <div className={styles.div}>
+            <h1 className={styles.h1}>Welcome to my first App!</h1>
+            <h2 className={styles.h2}>My name is Damian Figueroa</h2>
+            <p className={styles.p}>My name is Damian Figueroa and I am a passionate student of technology and programming. I am currently pursuing my M3 at soyHenry! and have a strong desire to continue learning and creating innovative projects. My goal is to use my skills and knowledge to develop effective and accessible solutions for different industries. Outside of the tech world, I enjoy reading, traveling, and playing sports. I am excited to share my work and insights with you through this app.</p>
+            <img src={image}
+                alt="Damian Figueroa" className={styles.imagen}
             />
+            <p className={styles.p}>You can connect with me on LinkedIn <a href="https://www.linkedin.com/in/damian-figueroa-b27b8399/ " target="_blank">
+
+            <img src={linked} alt='logo' className={styles.linked} />  </a> </p>
+            {/* https://www.linkedin.com/in/damian-figueroa-b27b8399/ */}
         </div>
     )
 }

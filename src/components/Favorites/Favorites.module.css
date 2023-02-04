@@ -3,29 +3,37 @@
     border: black solid;
     border-radius: 2rem;
     color: rgb(83, 121, 51);
-    background-color:rgb(142, 236, 102);
+    /* background-color:rgb(142, 236, 102); */
+   background-image: url("../../assets/fondo.jpg");
+    border: black solid;
     margin: 4rem;
     width: 42vh;
-    height: 76vh;
+    height: 65vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     opacity: 0.7; 
     transition: all 0.4s ease;
+    position: relative;
 }
 
 
 
 .title{
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
     max-width: max-content;
-    /* width: 10rem; */
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
     font-family: 'Open Sans', sans-serif;
     color: #2e3131;
     font-size: 2rem;
     font-weight: 600;
+    top: 30px;
+    border: solid 2px #ffffff;
+    border-radius: 50%;
+    padding: 14px;
+    background-color: aliceblue;
 }
 
 .title:hover{
@@ -46,8 +54,11 @@
 
 
 .botoncito{
-    width: 10%;
-    height: 10%;
+    top: 5px;
+    right: 10px;
+    position: absolute;
+    width: 12%;
+    height: 4%;
     border: none;
     border-radius: 0.5rem;
 }
@@ -56,15 +67,19 @@
 }
 
 .img {
-    border-radius: 2rem;
-    max-width: 100%;
-    max-height: 100%;
+    border-radius: 50%;
+    padding-top: 30px;
+    max-width: 95%;
+    max-height: 95%;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
 }
 
 .contenedor:hover{
     opacity: 1; 
     transform: scale(1.1);
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 10px 10px 50px 10px rgba(0, 0, 0, 0.80);
 }
 
 
@@ -74,4 +89,29 @@
 
 .hidden {
     display: none;
+}
+
+
+
+.botonFav{
+    
+    display: flex;
+    position: absolute;
+    width: 8%;
+    height: 6%;
+    bottom: 20px;
+    border: solid 2px ;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.4s ease;
+    background-color:rgb(142, 236, 102);
+    align-items: center;
+    right: 5%;
+}
+
+
+.botonFav:hover{
+    opacity: 1;
+    transform: scale(1.7);
 }
