@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     !access && navigate("/");
-  }, [access]);
+  }, [access, navigate]);
 
   const login = (userData) => {
     if (userData.password === password && userData.username === username) {
@@ -28,7 +28,7 @@ function App() {
   };
 
   const onSearch = (character) => {
-    fetch(`https://rickandmortyapi.com/api/character/${character}`)
+    fetch(`http://localhost:3001/rickandmorty/character/${character}`)
       .then((response) => response.json())
       .then((data) => {
         if (data.name) {

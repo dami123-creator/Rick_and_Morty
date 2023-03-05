@@ -6,7 +6,7 @@ const Favorites = () => {
   const { myFavorite } = useSelector((state) => state);
 
   return (
-    <div>
+    <div className={styles.cont}>
       {myFavorite.map((character) => {
         return (
           <div key={character.id} className={styles.contenedor}>

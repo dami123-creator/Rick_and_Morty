@@ -6,7 +6,7 @@
     background: #FFFFFF;
     max-width: 360px;
     max-height: 360px;
-    margin: 0 auto 100px;
+    margin: 200px auto 100px;
     padding: 45px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -46,16 +46,15 @@
 
 .img{
     position: absolute;
-    top: 10%;
+    margin-top: 100px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .rick{
-    width: 400px;
-    height: 500px;
-    position: absolute;
-    bottom: 1%;
-    right: 5%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    width: 300px;
+    height: 300px;
+    float: right;
+    align-self: center;
 }
